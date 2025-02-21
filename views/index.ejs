@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance Recommendation</title>
+</head>
+<body>
+    <h1>Insurance Recommendation Form</h1>
+    <form action="/recommend" method="POST">
+        <label>Gender:</label><input type="text" name="Gender" required><br>
+        <label>Age:</label><input type="number" name="Age" required><br>
+        <label>Region Code:</label><input type="text" name="Region_Code" required><br>
+        <label>Location Type:</label><input type="text" name="Location_Type" required><br>
+        <label>Education:</label><input type="text" name="Education" required><br>
+        <label>Annual Income:</label><input type="number" step="0.01" name="Annual_Income" required><br>
+        <label>Vehicle Type:</label><input type="text" name="Vehicle_Type" required><br>
+        <label>Previously Insured:</label><input type="number" name="Previously_Insured" required><br>
+        <label>Vehicle Age:</label><input type="text" name="Vehicle_Age" required><br>
+        <label>Vehicle Damage:</label><input type="number" name="Vehicle_Damage" required><br>
+        <button type="submit">Get Recommendation</button>
+    </form>
+</body>
+</html>

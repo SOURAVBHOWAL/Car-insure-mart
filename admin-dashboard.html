@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">INSUREMART</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="admin-dashboard.html">Dashboard</a></li>
+        <li><a href="admin-login.html" id="log_out_btn" style="visibility: hidden;">Log Out</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1>Admin Dashboard</h1>
+
+    <!-- Add Policy Form -->
+    <div class="card mt-4">
+      <div class="card-header">
+        <h4>Add New Policy</h4>
+      </div>
+      <div class="card-body">
+        <form id="addPolicyForm">
+          <div class="mb-3">
+            <label for="policyType" class="form-label">Policy Type</label>
+            <input type="text" class="form-control" id="policyType" required>
+          </div>
+          <div class="mb-3">
+            <label for="policyTier" class="form-label">Policy Tier</label>
+            <input type="text" class="form-control" id="policyTier" required>
+          </div>
+          <div class="mb-3">
+            <label for="companyName" class="form-label">Company Name</label>
+            <input type="text" class="form-control" id="companyName" required>
+          </div>
+          <div class="mb-3">
+            <label for="maxCoverageAmount" class="form-label">Max Coverage Amount</label>
+            <input type="number" step="0.01" class="form-control" id="maxCoverageAmount" required>
+          </div>
+          <div class="mb-3">
+            <label for="maxVehicleAge" class="form-label">Max Vehicle Age</label>
+            <input type="number" step="1" class="form-control" id="maxVehicleAge" required>
+          </div>
+          <div class="mb-3">
+            <label for="idvFactor" class="form-label">IDV Factor</label>
+            <input type="number" step="0.01" class="form-control" id="idvFactor" required>
+          </div>
+          <div class="mb-3">
+            <label for="ownDamageFactor" class="form-label">Own Damage Factor</label>
+            <input type="number" step="0.001" class="form-control" id="ownDamageFactor" required>
+          </div>
+          <div class="mb-3">
+            <label for="noOfYearsCovered" class="form-label">Number of Years Covered</label>
+            <input type="number" step="1" class="form-control" id="noOfYearsCovered" required>
+          </div>
+          <div class="mb-3">
+            <label for="deductible" class="form-label">Deductible</label>
+            <input type="number" step="0.01" class="form-control" id="deductible" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Add Policy</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- View Policies Table -->
+    <div class="card mt-4">
+      <div class="card-header">
+        <h4>Existing Policies</h4>
+      </div>
+      <div class="card-body">
+        <table class="table table-bordered" id="policyTable">
+          <thead>
+            <tr>
+              <th>Policy Type</th>
+              <th>Policy Tier</th>
+              <th>Company Name</th>
+              <th>Max Coverage Amount</th>
+              <th>Max Vehicle Age</th>
+              <th>IDV Factor</th>
+              <th>Own Damage Factor</th>
+              <th>Years Covered</th>
+              <th>Deductible</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Policies will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Add Car Form -->
+    <div class="card mt-4">
+      <div class="card-header">
+        <h4>Add New Car</h4>
+      </div>
+      <div class="card-body">
+        <form id="addCarForm">
+          <div class="mb-3">
+            <label for="make" class="form-label">Make</label>
+            <input type="text" class="form-control" id="make" required>
+          </div>
+          <div class="mb-3">
+            <label for="model" class="form-label">Model</label>
+            <input type="text" class="form-control" id="model" required>
+          </div>
+          <div class="mb-3">
+            <label for="variant" class="form-label">Variant</label>
+            <input type="text" class="form-control" id="variant" required>
+          </div>
+          <div class="mb-3">
+            <label for="bodyStyle" class="form-label">Body Style</label>
+            <input type="text" class="form-control" id="bodyStyle" required>
+          </div>
+          <div class="mb-3">
+            <label for="fuel" class="form-label">Fuel Type</label>
+            <input type="text" class="form-control" id="fuel" required>
+          </div>
+          <div class="mb-3">
+            <label for="seats" class="form-label">Seats</label>
+            <input type="number" class="form-control" id="seats" required>
+          </div>
+          <div class="mb-3">
+            <label for="capacity" class="form-label">Capacity</label>
+            <input type="number" class="form-control" id="capacity" required>
+          </div>
+          <div class="mb-3">
+            <label for="yearOfManufacture" class="form-label">Year of Manufacture</label>
+            <input type="number" class="form-control" id="yearOfManufacture" required>
+          </div>
+          <div class="mb-3">
+            <label for="exShowroomPrice" class="form-label">Ex-Showroom Price</label>
+            <input type="number" class="form-control" id="exShowroomPrice" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Add Car</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- View Cars Table -->
+    <div class="card mt-4">
+      <div class="card-header">
+        <h4>Existing Cars</h4>
+      </div>
+      <div class="card-body">
+        <table class="table table-bordered" id="carTable">
+          <thead>
+            <tr>
+              <th>Make</th>
+              <th>Model</th>
+              <th>Variant</th>
+              <th>Body Style</th>
+              <th>Fuel Type</th>
+              <th>Seats</th>
+              <th>Capacity</th>
+              <th>Year of Manufacture</th>
+              <th>Ex-Showroom Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Cars will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card mt-4">
+      <div class="card-header">
+        <h4>Existing Claims</h4>
+      </div>
+      <div class="card-body">
+        <table class="table table-bordered" id="claimTable">
+          <thead>
+            <tr>
+              <th>Email ID</th>
+              <th>Company name</th>
+              <th>Policy Type</th>
+              <th>Policy Tier</th>
+              <th>Damage Pic</th>
+              <th>Damage Location</th>
+              <th>Damage Severity</th>
+              <th>Invoice Pic</th>
+              <th>Bill amount</th>
+              <th>amount paid</th>
+              <th>Status</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Claims will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card mt-4">
+      <div class="card-header">
+        <h4>Existing Policy Holders</h4>
+      </div>
+      <div class="card-body">
+        <table class="table table-bordered" id="buyerTable">
+          <thead>
+            <tr>
+              <th>eId</th>
+              <th>Company Name</th>
+              <th>Policy Type</th>
+              <th>Policy Tier</th>
+              <th>Maximum Vehicle Age</th>
+              <th>Number of Years Covered</th>
+              <th>Deductible</th>
+              <th>Idv Factor</th>
+              <th>Premium Price</th>
+              <th>starting Date</th>
+              <th>Valid Till</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Claims will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="modal fade" id="editClaimModal" tabindex="-1" aria-labelledby="editClaimModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editClaimModalLabel">Edit Claim</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="editClaimForm">
+              <div class="mb-3">
+                <label for="amountPaid" class="form-label">Amount Paid</label>
+                <input type="number" class="form-control" id="amountPaid" required>
+              </div>
+              <div class="mb-3">
+                <label for="status" class="form-label">Status</label>
+                <select class="form-control" id="status" required>
+                  <option value="Pending">Pending</option>
+                  <option value="Approved">Approved</option>
+                  <option value="Rejected">Rejected</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Update Claim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 INSUREMART | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Fetch and display all policies from the server
+    async function fetchPolicies() {
+      try {
+        const response = await fetch('http://localhost:5000/policies');
+        const policies = await response.json();
+
+        const policyTableBody = document.getElementById('policyTable').getElementsByTagName('tbody')[0];
+        policyTableBody.innerHTML = ''; // Clear current table data
+
+        policies.forEach(policy => {
+          const row = policyTableBody.insertRow();
+          row.innerHTML = `
+            <td>${policy.policyType}</td>
+            <td>${policy.policyTier}</td>
+            <td>${policy.companyName}</td>
+            <td>${policy.max_coverage_amount}</td>
+            <td>${policy.max_vehicle_age}</td>
+            <td>${policy.idv_factor}</td>
+            <td>${policy.own_damage_factor}</td>
+            <td>${policy.no_of_years_covered}</td>
+            <td>${policy.deductible}</td>
+            <td>
+              <button class="btn btn-danger" onclick="deletePolicy('${policy._id}')">Delete</button>
+            </td>
+          `;
+        });
+      } catch (error) {
+        console.error('Error fetching policies:', error);
+        alert('Error fetching policies');
+      }
+    }
+
+    // Fetch and display all cars from the server
+    async function fetchCars() {
+      try {
+        const response = await fetch('http://localhost:5000/cars');
+        const cars = await response.json();
+
+        const carTableBody = document.getElementById('carTable').getElementsByTagName('tbody')[0];
+        carTableBody.innerHTML = ''; // Clear current table data
+
+        cars.forEach(car => {
+          const row = carTableBody.insertRow();
+          row.innerHTML = `
+            <td>${car.make}</td>
+            <td>${car.model}</td>
+            <td>${car.variant}</td>
+            <td>${car.body_style}</td>
+            <td>${car.fuel}</td>
+            <td>${car.seats}</td>
+            <td>${car.capacity}</td>
+            <td>${car.year_of_manufacture}</td>
+            <td>${car.ex_showroom_price}</td>
+            <td>
+              <button class="btn btn-danger" onclick="deleteCar('${car._id}')">Delete</button>
+            </td>
+          `;
+        });
+      } catch (error) {
+        console.error('Error fetching cars:', error);
+        alert('Error fetching cars');
+      }
+    }
+    async function fetchBuyers() {
+      try {
+        const response = await fetch('http://localhost:5000/buyer2');
+        const buyers = await response.json();
+
+        const buyerTableBody = document.getElementById('buyerTable').getElementsByTagName('tbody')[0];
+        buyerTableBody.innerHTML = ''; // Clear current table data
+
+        buyers.forEach(buyer => {
+          const row = buyerTableBody.insertRow();
+          row.innerHTML = `
+            <td>${buyer.eId}</td>
+            <td>${buyer.Company_Name}</td>
+            <td>${buyer.Policy_Type}</td>
+            <td>${buyer.Policy_Tier}</td>
+            <td>${buyer.Max_Vehicle_Age}</td>
+            <td>${buyer.No_of_Years_Covered}</td>
+            <td>${buyer.Deductible}</td>
+            <td>${buyer.Idv_Factor}</td>
+            <td>${buyer.Premium_Price}</td>
+            <td>${buyer.startingDate}</td>
+            <td>${buyer.validTill}</td>
+            
+          `;
+        });
+      } catch (error) {
+        console.error('Error fetching buyers:', error);
+        alert('Error fetching buyers');
+      }
+    }
+    let currentClaimId = '';
+    async function fetchClaims() {
+    try {
+      const response = await fetch('http://localhost:5000/claim2');
+      const claims = await response.json();
+
+      const claimTableBody = document.getElementById('claimTable').getElementsByTagName('tbody')[0];
+      claimTableBody.innerHTML = ''; // Clear current table data
+
+      claims.forEach(claim => {
+        const row = claimTableBody.insertRow();
+        row.innerHTML = `
+          <td>${claim.eId}</td>
+          <td>${claim.Company_Name}</td>
+          <td>${claim.Policy_Type}</td>
+          <td>${claim.Policy_Tier}</td>
+          <td><img src="${claim.damagePic}" alt="Damage" width="100" height="100"></td>
+          <td>${claim.damageLocation}</td>
+          <td>${claim.damageSeverity}</td>
+          <td><img src="${claim.invoicePic}" alt="Invoice" width="100" height="100"></td>
+          <td>${claim.billAmount}</td>
+          <td>${claim.amountPaid}</td>
+          <td>${claim.statusCode}</td>
+          <td>
+            <button class="btn btn-warning" onclick="editClaim('${claim._id}', '${claim.amountPaid}', '${claim.statusCode}')">Edit</button>
+          </td>
+        `;
+      });
+    } catch (error) {
+      console.error('Error fetching claims:', error);
+      alert('Error fetching claims');
+    }
+  }
+  function editClaim(claimId, amountPaid, status) {
+    currentClaimId = claimId;
+    document.getElementById('amountPaid').value = amountPaid;
+    document.getElementById('status').value = status;
+
+    // Show the modal for editing
+    const editClaimModal = new bootstrap.Modal(document.getElementById('editClaimModal'));
+    editClaimModal.show();
+  }
+
+  // Handle claim update form submission
+  document.getElementById('editClaimForm').addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const updatedClaim = {
+      amountPaid: parseFloat(document.getElementById('amountPaid').value),
+      statusCode: document.getElementById('status').value,
+    };
+
+    try {
+      const response = await fetch(`http://localhost:5000/update-claim/${currentClaimId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(updatedClaim),
+      });
+
+      if (response.ok) {
+        alert('Claim updated successfully');
+        fetchClaims(); // Refresh the list of claims
+        const editClaimModal = bootstrap.Modal.getInstance(document.getElementById('editClaimModal'));
+        editClaimModal.hide(); // Hide the modal
+      } else {
+        const result = await response.json();
+        alert('Error updating claim: ' + result.message);
+      }
+    } catch (error) {
+      alert('Error updating claim');
+    }
+  });
+    // Add new policy functionality
+    document.getElementById('addPolicyForm').addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const newPolicy = {
+        policyType: document.getElementById('policyType').value,
+        policyTier: document.getElementById('policyTier').value,
+        companyName: document.getElementById('companyName').value,
+        max_coverage_amount: parseFloat(document.getElementById('maxCoverageAmount').value),
+        max_vehicle_age: parseInt(document.getElementById('maxVehicleAge').value, 10),
+        idv_factor: parseFloat(document.getElementById('idvFactor').value),
+        own_damage_factor: parseFloat(document.getElementById('ownDamageFactor').value),
+        no_of_years_covered: parseInt(document.getElementById('noOfYearsCovered').value, 10),
+        deductible: parseFloat(document.getElementById('deductible').value),
+      };
+
+      try {
+        const response = await fetch('http://localhost:5000/add-policy', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(newPolicy),
+        });
+
+        if (response.ok) {
+          alert('Policy added successfully');
+          fetchPolicies(); // Refresh the list of policies
+        } else {
+          const result = await response.json();
+          alert('Error adding policy: ' + result.message);
+        }
+      } catch (error) {
+        alert('Error adding policy');
+      }
+    });
+
+    // Add new car functionality
+    document.getElementById('addCarForm').addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const newCar = {
+        make: document.getElementById('make').value,
+        model: document.getElementById('model').value,
+        variant: document.getElementById('variant').value,
+        body_style: document.getElementById('bodyStyle').value,
+        fuel: document.getElementById('fuel').value,
+        seats: parseInt(document.getElementById('seats').value, 10),
+        capacity: parseInt(document.getElementById('capacity').value, 10),
+        year_of_manufacture: parseInt(document.getElementById('yearOfManufacture').value, 10),
+        ex_showroom_price: parseFloat(document.getElementById('exShowroomPrice').value),
+      };
+
+      try {
+        const response = await fetch('http://localhost:5000/add-car', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(newCar),
+        });
+
+        if (response.ok) {
+          alert('Car added successfully');
+          fetchCars(); // Refresh the list of cars
+        } else {
+          const result = await response.json();
+          alert('Error adding car: ' + result.message);
+        }
+      } catch (error) {
+        alert('Error adding car');
+      }
+    });
+
+    // Delete policy functionality
+    async function deletePolicy(policyId) {
+      try {
+        const response = await fetch(`http://localhost:5000/delete-policy/${policyId}`, { method: 'DELETE' });
+        if (response.ok) {
+          alert('Policy deleted successfully');
+          fetchPolicies(); // Refresh the list of policies
+        } else {
+          alert('Error deleting policy');
+        }
+      } catch (error) {
+        alert('Error deleting policy');
+      }
+    }
+
+    // Delete car functionality
+    async function deleteCar(carId) {
+      try {
+        const response = await fetch(`http://localhost:5000/delete-car/${carId}`, { method: 'DELETE' });
+        if (response.ok) {
+          alert('Car deleted successfully');
+          fetchCars(); // Refresh the list of cars
+        } else {
+          alert('Error deleting car');
+        }
+      } catch (error) {
+        alert('Error deleting car');
+      }
+    }
+
+    // Initial fetch of policies and cars when the page loads
+    fetchPolicies();
+    fetchCars();
+    fetchClaims();
+    fetchBuyers();
+  </script>
+</body>
+
+</html>

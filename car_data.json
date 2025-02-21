@@ -1,0 +1,518 @@
+[{
+    "_id": {
+      "$oid": "6728c8c6822773a9bf999e41"
+    },
+    "make": "Tata",
+    "model": "Nexon",
+    "variant": "XZ+",
+    "body_style": "SUV",
+    "fuel":["Diesel","Petrol"],
+    "seats":5,
+    "capacity":1200,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 1050000
+  },
+  {
+    "_id": {
+      "$oid": "6728ca01822773a9bf999e42"
+    },
+    "make": "Tata",
+    "model": "Nexon",
+    "variant": "XZ+(O)",
+    "body_style": "SUV",
+    "fuel":["Petrol"],
+    "seats":5,
+    "capacity":1400,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 1150000
+  },
+  {
+    "_id": {
+      "$oid": "6728ca6e822773a9bf999e43"
+    },
+    "make": "Tata",
+    "model": "Nexon EV",
+    "variant": "XM",
+    "body_style": "SUV",
+    "fuel":["Electric"],
+    "seats":5,
+    "capacity":1300,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 1499000
+  },
+  {
+    "_id": {
+      "$oid": "6728caff822773a9bf999e44"
+    },
+    "make": "Tata",
+    "model": "Nexon EV",
+    "variant": "XZ+Lux",
+    "body_style": "SUV",
+    "fuel":["Electric"],
+    "seats":5,
+    "capacity":1450,
+    "year_of_manufacture": 2022,
+    "ex_showroom_price": 1629000
+  },
+  {
+    "_id": {
+      "$oid": "6728cb64822773a9bf999e45"
+    },
+    "make": "Tata",
+    "model": "Harrier",
+    "variant": "XT",
+    "body_style": "SUV",
+    "fuel":["Diesel"],
+    "seats":5,
+    "capacity":1956,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 1600000
+  },
+  {
+    "_id": {
+      "$oid": "6728cbb9822773a9bf999e46"
+    },
+    "make": "Tata",
+    "model": "Harrier",
+    "variant": "XZ+Dark Edition",
+    "body_style": "SUV",
+    "fuel":["Diesel"],
+    "seats":5,
+    "capacity":1956,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 2000000
+  },
+  {
+    "_id": {
+      "$oid": "6728cc3c822773a9bf999e47"
+    },
+    "make": "Tata",
+    "model": "Safari",
+    "variant": "XT+",
+    "body_style": "SUV",
+    "fuel":["Diesel"],
+    "seats":7,
+    "capacity":1956,
+    "year_of_manufacture": 2022,
+    "ex_showroom_price": 1900000
+  },
+  {
+    "_id": {
+      "$oid": "6728ccf3822773a9bf999e49"
+    },
+    "make": "Tata",
+    "model": "Safari",
+    "variant": "XZ+ Adventure",
+    "body_style": "SUV",
+    "fuel":["Diesel"],
+    "seats":7,
+    "capacity":1956,
+    "year_of_manufacture": 2022,
+    "ex_showroom_price": 2100000
+  },
+  {
+    "_id": {
+      "$oid": "6728cddd822773a9bf999e4b"
+    },
+    "make": "Tata",
+    "model": "Tiago",
+    "variant": "XZ+Dual",
+    "body_style": "Hatchback",
+    "fuel":["Petrol"],
+    "seats":5,
+    "capacity":1200,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 675000
+  },
+  {
+    "_id": {
+      "$oid": "6728ce8f822773a9bf999e4d"
+    },
+    "make": "Tata",
+    "model": "Altroz",
+    "variant": "XE",
+    "body_style": "Hatchback",
+    "fuel":["Petrol","CNG"],
+    "seats":5,
+    "capacity":1500,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 600000
+  },
+  {
+    "_id": {
+      "$oid": "6728ced4822773a9bf999e4e"
+    },
+    "make": "Tata",
+    "model": "Altroz",
+    "variant": "XZ(O)",
+    "body_style": "Hatchback",
+    "fuel":["Petrol","CNG"],
+    "seats":5,
+    "capacity":1500,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 825000
+  },
+  {
+    "_id": {
+      "$oid": "6728cf5f822773a9bf999e4f"
+    },
+    "make": "Tata",
+    "model": "Punch",
+    "variant": "Pure",
+    "body_style": "Micro SUV",
+    "fuel":["Petrol"],
+    "seats":5,
+    "capacity":1200,
+    "year_of_manufacture": 2022,
+    "ex_showroom_price": 599000
+  },
+  {
+    "_id": {
+      "$oid": "6728cfff822773a9bf999e50"
+    },
+    "make": "Tata",
+    "model": "Punch",
+    "variant": "Creative",
+    "body_style": "Micro SUV",
+    "fuel":["Petrol"],
+    "seats":5,
+    "capacity":1200,
+    "year_of_manufacture": 2022,
+    "ex_showroom_price": 850000
+  },
+  {
+    "_id": {
+      "$oid": "6728d0bb822773a9bf999e51"
+    },
+    "make": "Tata",
+    "model": "Tigor EV",
+    "variant": "XE",
+    "body_style": "Sedan",
+    "fuel":["Electric"],
+    "seats":5,
+    "capacity":1200,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 1199000
+  },
+  {
+    "_id": {
+      "$oid": "6728d109822773a9bf999e52"
+    },
+    "make": "Tata",
+    "model": "Tigor",
+    "variant": "XM",
+    "body_style": "Sedan",
+    "fuel":["Petrol","CNG"],
+    "seats":5,
+    "capacity":1200,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 620000
+  },
+  {
+    "_id": {
+      "$oid": "6728e3e7822773a9bf999e54"
+    },
+    "make": "Maruti Suzuki",
+    "model": "Swift",
+    "variant": "VXI",
+    "body_style": "Hatchback",
+    "fuel":["Petrol"],
+    "seats":5,
+    "capacity":1200,
+    "year_of_manufacture": 2021,
+    "ex_showroom_price": 636000
+  },
+  {
+    "_id": {
+      "$oid": "6728e42f822773a9bf999e55"
+    },
+    "make": "Maruti Suzuki",
+    "model": "Swift",
+    "variant": "ZXI+",
+    "body_style": "HatchBack",
+    "fuel":["Petrol"],
+    "seats":5,
+    "capacity":1200,
+    "year_of_manufacture": 2022,
+    "ex_showroom_price": 725000
+  },
+  {
+    "_id": {
+      "$oid": "6728e48a822773a9bf999e56"
+    },
+    "make": "Maruti Suzuki",
+    "model": "Baleno",
+    "variant": "Delta",
+    "body_style": "Hatchback",
+    "fuel":["Petrol","CNG"],
+    "seats":5,
+    "capacity":1200,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 661000
+  },
+  {
+    "_id": {
+      "$oid": "6728e4e6822773a9bf999e57"
+    },
+    "make": "Maruti Suzuki",
+    "model": "Baleno",
+    "variant": "Alpha",
+    "body_style": "Hatchback",
+    "fuel":["Petrol"],
+    "seats":5,
+    "capacity":1200,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 830000
+  },
+  {
+    "_id": {
+      "$oid": "6728e53a822773a9bf999e58"
+    },
+    "make": "Maruti Suzuki",
+    "model": "Vitara Brezza",
+    "variant": "VXI",
+    "body_style": "SUV",
+    "fuel":["Petrol","CNG"],
+    "seats":5,
+    "capacity":1500,
+    "year_of_manufacture": 2020,
+    "ex_showroom_price": 835000
+  },
+  {
+    "_id": {
+      "$oid": "6728e574822773a9bf999e59"
+    },
+    "make": "Maruti Suzuki",
+    "model": "Vitara Brezza",
+    "variant": "ZXI+",
+    "body_style": "SUV",
+    "fuel":["Petrol"],
+    "seats":5,
+    "capacity":1500,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 1050000
+  },
+  {
+    "_id": {
+      "$oid": "6728e5c2822773a9bf999e5a"
+    },
+    "make": "Maruti Suzuki",
+    "model": "Ertiga",
+    "variant": "ZXI+",
+    "body_style": "MPV",
+    "fuel":["Petrol"],
+    "seats":7,
+    "capacity":1500,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 1099000
+  },
+  {
+    "_id": {
+      "$oid": "6728e653822773a9bf999e5b"
+    },
+    "make": "Maruti Suzuki",
+    "model": "Ciaz",
+    "variant": "Alpha",
+    "body_style": "Sedan",
+    "fuel":["Petrol"],
+    "seats":5,
+    "capacity":1500,
+    "year_of_manufacture": 2024,
+    "ex_showroom_price": 1030000
+  },
+  {
+    "_id": {
+      "$oid": "6728e69e822773a9bf999e5c"
+    },
+    "make": "Hyundai",
+    "model": "i20",
+    "variant": "Sportz",
+    "body_style": "Hatchback",
+    "fuel":["Petrol"],
+    "seats":5,
+    "capacity":1200,
+    "year_of_manufacture": 2021,
+    "ex_showroom_price": 820000
+  },
+  {
+    "_id": {
+      "$oid": "6728e6f2822773a9bf999e5d"
+    },
+    "make": "Hyundai",
+    "model": "i20",
+    "variant": "Asta",
+    "body_style": "Hatchback",
+    "fuel":["Petrol"],
+    "seats":5,
+    "capacity":1200,
+    "year_of_manufacture": 2022,
+    "ex_showroom_price": 950000
+  },
+  {
+    "_id": {
+      "$oid": "6728e71c822773a9bf999e5e"
+    },
+    "make": "Hyundai",
+    "model": "Venue",
+    "variant": "S",
+    "body_style": "SUV",
+    "fuel":["Petrol"],
+    "seats":5,
+    "capacity":1200,
+    "year_of_manufacture": 2020,
+    "ex_showroom_price": 750000
+  },
+  {
+    "_id": {
+      "$oid": "6728e770822773a9bf999e5f"
+    },
+    "make": "Hyundai",
+    "model": "Venue",
+    "variant": "SX(O)",
+    "body_style": "SUV",
+    "fuel":["Diesel","Petrol"],
+    "seats":5,
+    "capacity":1500,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 1225000
+  },
+  {
+    "_id": {
+      "$oid": "6728e7a3822773a9bf999e60"
+    },
+    "make": "Hyundai",
+    "model": "Creta",
+    "variant": "EX",
+    "body_style": "SUV",
+    "fuel":["Diesel","Petrol"],
+    "seats":5,
+    "capacity":1500,
+    "year_of_manufacture": 2021,
+    "ex_showroom_price": 1000000
+  },
+  {
+    "_id": {
+      "$oid": "6728e7f4822773a9bf999e61"
+    },
+    "make": "Hyundai",
+    "model": "Creta",
+    "variant": "SX Executive",
+    "body_style": "SUV",
+    "fuel":["Diesel","Petrol"],
+    "seats":5,
+    "capacity":1500,
+    "year_of_manufacture": 2022,
+    "ex_showroom_price": 1280000
+  },
+  {
+    "_id": {
+      "$oid": "6728e824822773a9bf999e62"
+    },
+    "make": "Hyundai",
+    "model": "Alcazar",
+    "variant": "Signature 6-seater",
+    "body_style": "SUV",
+    "fuel":["Diesel","Petrol"],
+    "seats":7,
+    "capacity":2000,
+    "year_of_manufacture": 2024,
+    "ex_showroom_price": 1900000
+  },
+  {
+    "_id": {
+      "$oid": "6728e872822773a9bf999e63"
+    },
+    "make": "Mahindra",
+    "model": "XUV300",
+    "variant": "W6",
+    "body_style": "SUV",
+    "fuel":["Diesel","Petrol"],
+    "seats":5,
+    "capacity":1500,
+    "year_of_manufacture": 2021,
+    "ex_showroom_price": 850000
+  },
+  {
+    "_id": {
+      "$oid": "6728e8b2822773a9bf999e64"
+    },
+    "make": "Mahindra",
+    "model": "XUV300",
+    "variant": "W8(O)",
+    "body_style": "SUV",
+    "fuel":["Diesel","Petrol"],
+    "seats":5,
+    "capacity":1500,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 1199000
+  },
+  {
+    "_id": {
+      "$oid": "6728e8f5822773a9bf999e65"
+    },
+    "make": "Mahindra",
+    "model": "XUV700",
+    "variant": "AX5",
+    "body_style": "SUV",
+    "fuel":["Diesel","Petrol"],
+    "seats":5,
+    "capacity":1500,
+    "year_of_manufacture": 2022,
+    "ex_showroom_price": 1650000
+  },
+  {
+    "_id": {
+      "$oid": "6728e91a822773a9bf999e66"
+    },
+    "make": "Mahindra",
+    "model": "XUV700",
+    "variant": "AX7 Luxury Pack",
+    "body_style": "SUV",
+    "fuel":["Diesel","Petrol"],
+    "seats":7,
+    "capacity":1997,
+    "year_of_manufacture": 2024,
+    "ex_showroom_price": 2100000
+  },
+  {
+    "_id": {
+      "$oid": "6728e95e822773a9bf999e67"
+    },
+    "make": "Mahindra",
+    "model": "Thar",
+    "variant": "AX",
+    "body_style": "SUV",
+    "fuel":["Diesel","Petrol"],
+    "seats":4,
+    "capacity":1500,
+    "year_of_manufacture": 2020,
+    "ex_showroom_price": 980000
+  },
+  {
+    "_id": {
+      "$oid": "6728e989822773a9bf999e68"
+    },
+    "make": "Mahindra",
+    "model": "Thar",
+    "variant": "LX Hard Top",
+    "body_style": "SUV",
+    "fuel":["Diesel","Petrol"],
+    "seats":4,
+    "capacity":1500,
+    "year_of_manufacture": 2022,
+    "ex_showroom_price": 1320000
+  },
+  {
+    "_id": {
+      "$oid": "6728e9b9822773a9bf999e69"
+    },
+    "make": "Mahindra",
+    "model": "Bolero",
+    "variant": "B6 Opt",
+    "body_style": "SUV",
+    "fuel":["Diesel"],
+    "seats":7,
+    "capacity":1500,
+    "year_of_manufacture": 2023,
+    "ex_showroom_price": 1000000
+  }]

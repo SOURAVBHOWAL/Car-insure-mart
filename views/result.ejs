@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendations</title>
+</head>
+<body>
+    <h1>Recommended Insurance Policies</h1>
+    <ul>
+        <% recommendations.forEach(policy => { %>
+            <li><%= policy %></li>
+        <% }) %>
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <nav>
+    <div class="wrapper">
+      <!-- <div class="logo"><img href="#" src="images/logo3.png" alt="logo"><a href="#">INSUREMART</a></div> -->
+      <div class="logo"><a href="#">INSUREMART</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="#" class="desktop-item">Explore Facilities</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Explore Facilities</label>
+          <ul class="drop-menu">
+            <li><a href="view_policies.html">View Policies</a></li>
+            <li><a href="register.html">Buy Policy</a></li>
+            <li><a href="get_quote.html" id="get_quote">Get Quote</a></li>
+            <li><a href="generate_claim.html">Generate Claim</a></li>
+            <li><a href="profile.html">Track Your Claim</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="signup.html" id="sign_in_btn">Sign in</a></li>
+        <li><a href="#" class="desktop-item">Account</a>
+          <input type="checkbox" id="acc">
+          <label for="acc" class="mobile-item">Account</label>
+          <ul class="drop-menu">
+            <li><a href="profile.html">My Account</a></li>
+            <li><a href="signup.html" id="log_out_btn">Log Out</a></li>
+          </ul></li>
+          <li><a href="admin-login.html" id="admin">Admin</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+
+
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/pexels-introspectivedsgn-28996442.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pexels-matheus-triaquim-118638681-10155606.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/pexels-trace-707046.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="body-text">
+    <div class="title">Find the best Insurance Policy</div>
+    <div class="sub-title">that suits your needs.</div>
+  </div>
+
+  <br>
+  <div class="info">
+    <div class="compare">
+      <pre>
+            <h3>
+            Compare policies from
+            various providers.
+            </h3>
+            <h5>
+              <a href="view_policies.html" style="color: black; text-decoration: none;">
+                Check out the various 
+                policies available<span>&#8594;</span>
+              </a>
+            </h5>
+            </pre>
+      <img id="plot" src="images/pexels-shkrabaanthony-5816283.jpg">
+    </div>
+    <div class="compare">
+      <img id="plot" src="images/pexels-karolina-grabowska-4386366.jpg">
+      <pre>
+      <h3>
+        Get approximated price of 
+        insuring your vehicle
+        </h3>
+        <h5>
+          <a href="get_quote.html" style="color: black; text-decoration: none;">
+            Get quick quote<span>&#8594;</span>
+          </a>
+        </h5>
+      </pre>
+    </div>
+    <div class="compare">
+      <pre>
+            <h3>
+            Easily generate Claims
+            and get quick response.
+            </h3>
+            <h5>
+              <a href="generate_claim.html" style="color: black; text-decoration: none;">
+                Generate Claim<span>&#8594;</span>
+              </a>
+            </h5>
+            </pre>
+      <img id="plot" src="images/pexels-a-darmel-7641867.jpg">
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+                  <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
+                  <li class="menu__item"><a class="menu__link" href="view_policies.html">Policies</a></li>
+
+    </ul>
+    <p>&copy;2024 INSUREMART | All Rights Reserved</p>
+  </footer>
+
+
+  <script src="index_js.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
